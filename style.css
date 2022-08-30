@@ -1,0 +1,10 @@
+:root {
+    --primary-color: #0a1118;
+    --primary-color-highlight: #233d54;
+    --bs-body-bg: #fbf0f6; 
+    --bs-body-font-family:'Roboto Mono';
+}
+
+header {
+    z-index: 2;
+}
