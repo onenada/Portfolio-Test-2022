@@ -1,6 +1,7 @@
+
 :root {
     --primary-color: #0a1118;
-    --primary-color-highlight: #233d54;
+    --primary-color-highlight: #2adada;
     --bs-body-bg: #fbf0f6; 
     --bs-body-font-family:'Roboto Mono';
 }
@@ -9,13 +10,79 @@
     font-family: 'Roboto Mono' sans-serif;
 }
 
+/* Navbar buttons */
+
+
+
+/* Navbar buttons hover */
+.navbar .nav-item .nav-link:hover {
+    background-color: #FFC300;
+
+}
 /* BODY */
+
+.HernandezTitle {
+    text-align: center;
+}
+
+/* BG VIDEO */
+.Back-Video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.HernandezTitle {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+}
+
+.HernandezTitle h1 {
+    font-size: 100px;
+    color: #fff;
+    font-weight: 600;
+    z-index: 666;
+}
+
+.HernandezTitle a {
+    margin-top: 25px;
+    font-size: 28px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .HernandezTitle h1 {
+        font-size: 65px;
+        color: #fff;
+        font-weight: 600;
+        z-index: 666;
+    }
+
+    .Back-Video {
+        width: 100%;
+        height: auto;
+    }
+}
+    
+@media (max-aspect-ratio: 16/9) {
+    .Back-Video {
+        width: auto;
+        height: 100%;
+    }
+    
+}
+
+
+
 
 .body {
    background-color: #f1fbff;
 }
 
-/* Padding*/
+/* PADDING*/
 .section-padding {
     padding: 100px 0 ;
 
@@ -28,6 +95,11 @@
 .carousel-caption {
     bottom: 220px;
     z-index: 2;
+}
+
+#first-carouselc {
+    align-self: top;
+    
 }
 
 .carousel-caption h5 {
@@ -43,4 +115,8 @@
     font-size: 18px;
     line-height: 1.9;
 
+}
+
+#item1 {
+    align-self: flex-start;
 }
