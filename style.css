@@ -10,13 +10,60 @@
     font-family: 'Roboto Mono' sans-serif;
 }
 
-/* Navbar buttons */
 
+/* Navbar Main */
+.navbar-main {
+    background: rgba(fff, fff, fff, 0.5);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+/* Navbar Container */
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+
+/* Navbar-menu */
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+/* Navbar-item */
+.navbar-item {
+    height: 80px;
+}
+/* Navbar-link */
+.navbar-link {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    text-decoration: none;
+    height: 100%;
+    transition: all 0.3s ease;
+}
 
 
 /* Navbar buttons hover */
-.navbar .nav-item .nav-link:hover {
-    background-color: #FFC300;
+.navbar-menu .navbar-item .navbar-link:hover {
+    color: #FFC300;
+    transition: all 0.3s ease;
 
 }
 /* BODY */
@@ -53,7 +100,105 @@
     display: inline-block;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 960px) {
+
+    /* Navbar mobile container */
+    .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0 ;
+      }
+
+        /* Navbar-mobile-menu */
+    .navbar-menu {
+        display: grid;grid
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: -1;
+
+
+    }
+
+        /* Navbar-mobile-menu-active */
+    .navbar-menu.active {
+        background-color: #131313;
+        top: 100%;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 60vh;
+        font-size: 1.6rem;
+    }
+        /* Navbar-mobile-menu-logo */
+    .navbar-brand {
+        padding-left: 25px ;
+    }
+        /* Navbar-mobile-menu-btn */
+    .navbar--toggle .bar {
+        color: white;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #fff;
+        z-index: 20;
+
+    }
+        /* Navbar-mobile-menu-item */
+    .navbar-item {
+        width: 100%;
+
+    }
+
+        /* Navbar-mobile-menu-link */
+    .navbar-link {
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+
+    }
+
+    /* Navbar mobile menu id*/
+    #mobile-menu{
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    /* Navbar mobile menu btn bars*/
+
+    .navbar--toggle .bar {
+        display: block;
+        cursor: pointer;
+      }
+
+    /* Navbar mobile menu btn bars animation this is where magic happens from 3 lines to an X*/
+
+    #mobile-menu.navbar--toggle.is-active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    #mobile-menu.navbar--toggle.is-active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    #mobile-menu.navbar--toggle.is-active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* Body main title*/
+
     .HernandezTitle h1 {
         font-size: 65px;
         color: #fff;
