@@ -100,6 +100,12 @@
     display: inline-block;
 }
 
+.body {
+    background-color: #f1fbff;
+ }
+ 
+    /* Break Points */
+
 @media screen and (max-width: 960px) {
 
     /* Navbar mobile container */
@@ -200,68 +206,23 @@
     /* Body main title*/
 
     .HernandezTitle h1 {
-        font-size: 65px;
+        letter-spacing: 0.5px;
+        font-size: 60px;
         color: #fff;
         font-weight: 600;
         z-index: 666;
     }
 
     .Back-Video {
-        width: 100%;
+        width: auto;
         height: auto;
     }
 }
-    
-@media (max-aspect-ratio: 16/9) {
+
+
+
+@media screen and (max-width: 620px) {
     .Back-Video {
-        width: auto;
-        height: 100%;
+        object-fit: fill;
     }
-    
-}
-
-
-
-
-.body {
-   background-color: #f1fbff;
-}
-
-/* PADDING*/
-.section-padding {
-    padding: 100px 0 ;
-
-}
-/* Carousel items*/
-.carousel-item {
-    height: 100vh;
-    min-height: 300px;
-}
-.carousel-caption {
-    bottom: 220px;
-    z-index: 2;
-}
-
-#first-carouselc {
-    align-self: top;
-    
-}
-
-.carousel-caption h5 {
-    font-size: 45px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 25px;
-    
-}
-.carousel-caption p {
-    width: 60%;
-    margin: auto;
-    font-size: 18px;
-    line-height: 1.9;
-
-}
-
-#item1 {
-    align-self: flex-start;
 }
