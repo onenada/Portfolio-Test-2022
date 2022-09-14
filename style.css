@@ -1,4 +1,5 @@
 
+
 :root {
     --primary-color: #0a1118;
     --primary-color-highlight: #2adada;
@@ -13,7 +14,7 @@
 
 /* Navbar Main */
 .navbar-main {
-    background: rgba(fff, fff, fff, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     height: 80px;
     display: flex;
     justify-content: center;
@@ -67,12 +68,28 @@
 
 }
 /* BODY */
+.body {
 
+}
 .HernandezTitle {
     text-align: center;
 }
 
-/* BG VIDEO */
+/* VIDEO */
+/* .video--container {
+    background-color: rgba(fff, fff, fff, 0,5);
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+
+    height: 90%;
+    text-align: center;
+    padding: 30px;
+} */
+
+
 .Back-Video {
     position: absolute;
     right: 0;
@@ -100,10 +117,146 @@
     display: inline-block;
 }
 
-.body {
-    background-color: #f1fbff;
- }
+
+    /* About Me Section */
+
+
+.Aboutme__container{
+    margin-top: 46rem;
+    margin-bottom: 5rem;
+    display: flex;
+
+}
+
+.Aboutme__img__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5%;
+    height: 90%;
+    z-index: 3;
+    width: auto;
+    max-width: 1300px;
+    padding: 0 20px;
+}
+
+
+.Aboutme__img__card {
+    padding: 0%;
+}
+
+.Aboutme__content {
+    padding-right: 20px;
  
+}
+    /* Skills */
+
+
+.Skills {
+    background-color: #131313;
+    list-style: none;
+    width: 500px;
+    margin: 60px 60px;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.Skills h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.Skills h3{
+    margin: 5px;
+    text-transform: uppercase;
+}
+
+
+
+/* .Skills__container {
+    padding: 0 20px;
+    border: 2px solid red;
+} */
+
+.Skills li {
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.barS {
+    background-color: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.barS:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.barS span {
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(255, 195, 0, 1)0%, rgba(255, 0, 50, 1)100%);
+}
+.html {
+    width: 70%;
+    animation: html 3s;
+}
+.css {
+    width: 63%;
+    animation: css 3s;
+}
+.js {
+    width: 40%;
+    animation: js 3s;
+}
+.python {
+    width: 45%;
+    animation: python 3s;
+}
+     /* Skills Bars Animation*/
+
+@keyframes html {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 70%;
+    }
+}
+
+@keyframes css {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 63%;
+    }
+}
+@keyframes js {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 40%;
+    }
+}
+@keyframes python {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 45%;
+    }
+}
+
     /* Break Points */
 
 @media screen and (max-width: 960px) {
