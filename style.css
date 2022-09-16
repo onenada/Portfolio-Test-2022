@@ -124,7 +124,7 @@
 .Aboutme__container{
     margin-top: 46rem;
     margin-bottom: 5rem;
-    display: flex;
+    display: block;
 
 }
 
@@ -141,6 +141,10 @@
     padding: 0 20px;
 }
 
+.Yo-img {
+    border-radius: 14px;
+}
+
 
 .Aboutme__img__card {
     padding: 0%;
@@ -150,37 +154,40 @@
     padding-right: 20px;
  
 }
-    /* Skills */
+
+    /* TECH AND DESIGNSOFTWARE CONTAINER DISPLAY */
+
+.Allskills {
+    display: flex;
+    
+}
+
+    /* Tech Skills */
 
 
-.Skills {
+.TSkills {
     background-color: #131313;
     list-style: none;
     width: 500px;
     margin: 60px 60px;
+    border-radius: 14px;
     color: #fff;
     padding: 20px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.Skills h1 {
+.TSkills h1 {
     text-align: center;
     text-transform: uppercase;
 }
 
-.Skills h3{
+.TSkills h3{
     margin: 5px;
     text-transform: uppercase;
 }
 
 
-
-/* .Skills__container {
-    padding: 0 20px;
-    border: 2px solid red;
-} */
-
-.Skills li {
+.TSkills li {
     margin: 20px 0;
     padding: 10px;
 }
@@ -203,7 +210,7 @@
 .barS span {
     height: 20px;
     float: left;
-    background: linear-gradient(135deg, rgba(255, 195, 0, 1)0%, rgba(255, 0, 50, 1)100%);
+    background: linear-gradient(135deg, rgba(255, 195, 0, 1)70%, rgba(255, 0, 50, 1)100%);
 }
 .html {
     width: 70%;
@@ -221,7 +228,78 @@
     width: 45%;
     animation: python 3s;
 }
-     /* Skills Bars Animation*/
+
+
+    /* DESIGN SOFTWARE */
+
+
+.DSoftware {
+    background-color: #131313;
+    list-style: none;
+    width: 50%;
+    margin: 60px 60px;
+    border-radius: 14px;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.DSoftware h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.DSoftware h3{
+    margin: 5px;
+    text-transform: uppercase;
+}
+
+
+.DSoftware li {
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.barDS {
+    background-color: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.barDS:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.barDS span {
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(255, 195, 0, 1)70%, rgba(255, 0, 50, 1)100%);
+}
+.Photoshop {
+    width: 90%;
+    animation: Photoshop 4s;
+}
+.Illustrator {
+    width: 83%;
+    animation: Illustrator 4s;
+}
+.Premiere {
+    width: 54%;
+    animation: Premiere 3.5s;
+}
+.AE {
+    width: 45%;
+    animation: AE 3.5s;
+}
+     /* SKILL BARS ANIMATION*/
+
+
+     /* TECH SKILLANIMATION*/
 
 @keyframes html {
     0%{
@@ -256,8 +334,43 @@
         width: 45%;
     }
 }
+     /* DESIGN SOFTWARE*/
 
-    /* Break Points */
+@keyframes Photoshop {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+@keyframes Illustrator {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 83%;
+    }
+}
+@keyframes Premiere {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 54%;
+    }
+}
+@keyframes AE {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 45%;
+    }
+}
+
+    /* BREAK POINTS*/
 
 @media screen and (max-width: 960px) {
 
@@ -369,6 +482,37 @@
     .Back-Video {
         width: auto;
         height: auto;
+    }
+
+        /* About Section*/
+    /* .Aboutme__container{
+        margin-top: 40rem;
+        margin-bottom: 5rem;
+        display: flex;
+    } */
+        
+
+    .Aboutme__img__card {
+        size: 50%;
+    }
+
+
+
+        /* Skills*/
+
+    .Allskills {
+        width: 70%;
+            
+    }
+
+    .TSkills {
+        background-color: #131313;
+        list-style: none;
+        width: 45%;
+        margin: 60px 60px;
+        color: #fff;
+        padding: 15px;
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     }
 }
 
